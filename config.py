@@ -23,12 +23,12 @@ total_screen_width = 3840 + 1920
 total_screen_height = 2160 + 1080
 
 # Id of the pen itself, found with xinput list.
-pen_id = 8
+pen_id = "\"HID 256c:006d stylus\""
 
 # Run python list-devices.py to find these values.
-pen_dev_path = "/dev/input/event9"
-pad_dev_path = "/dev/input/event10"
-ts_dev_path  = "/dev/input/event11"
+pen_dev_name = "HID 256c:006d"
+pad_dev_name = "HID 256c:006d Pad"
+ts_dev_name  = "HID 256c:006d Touch Strip"
 
 # This is where the error output will be written to a file.
 output_path = "{0}/output".format(os.getcwd())

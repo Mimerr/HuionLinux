@@ -6,9 +6,9 @@ import touchstrip
 async def process(device):
   """ Process events. """
   async for event in device.async_read_loop():
-    if device.path == config.pen_dev_path:
+    if device.name == config.pen_dev_name:
       buttons.handle(event.code, event.value)
-    elif device.path == config.pad_dev_path:
+    elif device.name == config.pad_dev_name:
       buttons.handle(event.code, event.value)
-    elif device.path == config.ts_dev_path:
+    elif device.name == config.ts_dev_name:
       touchstrip.handle(event.code, event.value)

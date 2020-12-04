@@ -21,14 +21,15 @@ if rc.returncode != 0:
 # -----------------------------------------------------------------------------
 # Set device paths and event handler.
 # -----------------------------------------------------------------------------
-pen = evdev.InputDevice(config.pen_dev_path)
-pad = evdev.InputDevice(config.pad_dev_path)
-ts  = evdev.InputDevice(config.ts_dev_path)
-
-pad.grab()
-ts.grab()
-
-huion_devices = [pen, pad, ts]
+huion_devices = []
+config_devices = [config.pen_dev_name, config.pad_dev_name, config.ts_dev_name]
+devices = [evdev.InputDevice(path) for path in evdev.list_devices()]
+for device in devices:
+  if device.name in config_devices:
+    dev = evdev.InputDevice(device.path)
+    huion_devices.append(dev)
+    if device.name != config.pen_dev_name:
+      dev.grab()
 
 for device in huion_devices:
   asyncio.ensure_future(eventor.process(device))
