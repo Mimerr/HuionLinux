@@ -1,7 +1,7 @@
 """ Calibrate the tablet. """
 import subprocess as sp
 
-import config
+import huion.config.config as config
 
 # Calculations for the xinput values to set the tablet's location.
 C0 = config.tablet_width / config.total_screen_width

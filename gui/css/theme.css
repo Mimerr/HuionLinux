@@ -1,0 +1,15 @@
+:root {
+  --primary-color: rgba(34, 34, 34, 1);
+  --primary-trans-color: rgba(34, 34, 34, 0.6);
+  --secondary-color: rgba(238, 238, 238, 1);
+  --tertiary-color: rgba(160, 140, 140, 1);
+  --active-color: rgba(0, 136, 153, 1);
+  --active-primary-color: var(--active-color);
+  --active-secondary-color: rgba(34, 102, 119, 1);
+  --danger-color: rgba(153, 34, 34, 1);
+  --warning-color: rgba(153, 153, 66, 1);
+  --success-color: rgba(34, 153, 34, 1);
+  --primary-font: "Verdana";
+  --prose-font: "Times New Roman";
+  --code-font: "Courier New";
+}

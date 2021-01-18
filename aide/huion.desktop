@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=python3 /path/to/main.py
+Icon=tablet
+Name=Huion
+Terminal=false
+Type=Application
+Categories=Utility

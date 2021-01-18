@@ -1,0 +1,16 @@
+{
+  "buttons": {
+    "256": {"command": "key",     "args": "Up"},
+    "257": {"command": "key",     "args": "Down"},
+    "258": {"command": "keydown", "args": "super"},
+    "259": {"command": "keydown", "args": "ctrl"},
+    "260": {"command": "keydown", "args": "shift"},
+    "261": {"command": "keydown", "args": "alt"},
+    "332": {"command": "click",   "args": "3"},
+    "331": {"command": "click",   "args": "2"}
+  },
+  "touchstrip": {
+    "up":   {"command": "click", "args": "4"},
+    "down": {"command": "click", "args": "5"}
+  }
+}

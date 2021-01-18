@@ -1,0 +1,42 @@
+/* Primary styles that will persist always. */
+
+body {
+  margin: 0;
+  background-color: transparent;
+}
+
+.left { float: left; }
+.right { float: right; }
+.hide { visibility: hidden; }
+
+.active {
+  background-color: var(--active-color) !important;
+}
+
+.profile-tile {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: var(--primary-font);
+  font-size: large;
+  padding: 20px;
+  border-radius: 20px;
+  border-color: var(--tertiary-color);
+  margin: 4px;
+  width: 200px;
+}
+
+.profile-refresh {
+  background-color: black;
+  color: var(--tertiary-color);
+  font-family: var(--primary-font);
+  font-size: large;
+  padding: 20px;
+  border-radius: 20px;
+  border-color: var(--tertiary-color);
+  margin: 4px;
+  width: 200px;
+}
+
+.profile-refresh:hover, .profile-tile:hover {
+  background-color: var(--active-secondary-color);
+}
