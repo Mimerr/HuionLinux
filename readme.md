@@ -1,5 +1,9 @@
 # Huion Kamvas Pro 16 on Linux
 
+## [Huion now officially supports Linux](https://www.huion.com/download)
+
+### Since there is now official software this is no longer really needed. Personally I like how it works better than the official software but a lot of dependencies seem to be outdated or no longer supported so it is just much easier to use the official software.
+
 This is a driver of sorts for the Huion Kamvas Pro 16 graphics tablet monitor.
 
 It is highly tailored to my personal setup running Kubuntu on an unconventional monitor arrangement. It is somewhat easy to adapt however, so if you want to fork it and build it up for your tablet and set up, feel free.
