@@ -4,6 +4,9 @@ import huion.daemon.daemon as daemon
 import huion.events.buttons as buttons
 import huion.events.touchstrip as touchstrip
 import huion.gui.gui as gui
+import signal
+
+signal.signal(signal.SIGINT, signal.SIG_DFL)
 
 class Main:
   def __init__(self):

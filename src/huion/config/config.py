@@ -71,6 +71,7 @@ def load_profile(name):
   except FileNotFoundError:
     # If the given profile doesn't exist use a default setup.
     input_conf = default_input_conf
+    print("Using default profile.")
   app_conf["last_profile"] = name
   save_app_config()
 
