@@ -18,6 +18,7 @@ This is a driver of sorts for the Huion Kamvas Pro 16 graphics tablet monitor (G
     3. Activate environment: `conda activate huion`
     4. Install pipreqs: `pip install pipreqs && pipreqs`
     5. Install requirements: `pip install -r requirements.txt`
+    6. `sudo apt-get install python3-qtpy` and `sudo apt-get install xdotool`
 1. Download/install the dkms deb from: [Here](https://github.com/DIGImend/digimend-kernel-drivers/releases) This more or less takes care of all the pressure and tilt input for the actual pen, which I didn't want to mess with.
 2. Add your user to input group. `sudo gpasswd -a username input` Where username is your user name. This is needed so your user can actually see the device events.
 3. Put the config, gui, and src folders where you want them to be run from (you can put everything there but that is the minimal needed stuff.) I usually make a ~/Applications/Huion folder and put them there.
