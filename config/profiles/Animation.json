@@ -15,21 +15,3 @@
     "down": {"command": "key", "args": "shift+period"}
   }
 }
-
-{
-  "buttons": {
-    "256": {"command": "key",     "args": "1"},
-    "257": {"command": "key",     "args": "2"},
-    "258": {"command": "keydown", "args": "3"},
-    "259": {"command": "keydown", "args": "4"},
-    "260": {"command": "keydown", "args": "5"},
-    "261": {"command": "keydown", "args": "shift+l"},
-
-    "332": {"command": "click",   "args": "3"},
-    "331": {"command": "click",   "args": "2"}
-  },
-  "touchstrip": {
-    "up":   {"command": "key", "args": "shift+comma"},
-    "down": {"command": "key", "args": "shift+period"}
-  }
-}
