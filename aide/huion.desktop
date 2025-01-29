@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=python3 /path/to/main.py
+Exec=/path/to/miniconda3/envs/huion/bin/python3 /path/to/src/main.py
 Icon=tablet
 Name=Huion
 Terminal=false

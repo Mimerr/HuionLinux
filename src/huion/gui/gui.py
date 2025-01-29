@@ -14,6 +14,7 @@ class Api:
     for f in ls:
       if f.endswith(".json"):
         self.profiles.add(f.split(".")[0])
+    config.load_profile(config.app_conf["last_profile"])
     return sorted(self.profiles)
 
   def set_profile(self, name):

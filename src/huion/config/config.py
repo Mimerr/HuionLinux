@@ -13,18 +13,18 @@ tablet_width = 1920
 tablet_height = 1080
 
 # These are the +s after the resolution. The 2952+2160 in the example.
-tablet_offset_x = 2952
-tablet_offset_y = 2160
+tablet_offset_x = 1600
+tablet_offset_y = 1440
 
 # These represent the combined resolution of all monitors.
 # With the xrandr output you can find this by adding the width to the x offset
 # of each connected monitor and selecting the highest. Then do the same for
 # the heights and the y offset.
-total_screen_width = 3840 + 1920
-total_screen_height = 2160 + 1080
+total_screen_width = 5120 + 1080
+total_screen_height = 1440 + 1080
 
 # Id of the pen itself, found with xinput list.
-pen_id = "\"HID 256c:006d stylus\""
+pen_id = "\"HID 256c:006d Pen stylus\""
 
 # Run python aide/list-devices.py to find these values.
 pen_dev = "HID 256c:006d"
