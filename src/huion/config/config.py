@@ -27,7 +27,7 @@ total_screen_height = 1440 + 1080
 pen_id = "\"HID 256c:006d Pen stylus\""
 
 # Run python aide/list-devices.py to find these values.
-pen_dev = "HID 256c:006d"
+pen_dev = "HID 256c:006d Pen"
 pad_dev = "HID 256c:006d Pad"
 ts_dev  = "HID 256c:006d Touch Strip"
 
@@ -57,8 +57,8 @@ default_input_conf = {
     "331": {"command": "click",   "args": "2"}
   },
   "touchstrip": {
-    "up":   {"command": "click", "args": "4"},
-    "down": {"command": "click", "args": "5"}
+    "up":   {"command": "key", "args": "4"},
+    "down": {"command": "key", "args": "5"}
   }
 }
 

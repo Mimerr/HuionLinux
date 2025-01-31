@@ -4,7 +4,7 @@ import huion.config.config as config
 import huion.events.xdotool as xdotool
 
 class Touchstrip:
-  scroll_code = 8
+  scroll_code = 3
   touch_code = 40
   press_value = 15
   release_value = 0
@@ -26,9 +26,9 @@ class Touchstrip:
           up = config.input_conf["touchstrip"]["up"]
           down = config.input_conf["touchstrip"]["down"]
           if value > self.prev_value:
-            xdotool.execute(xdotool.commands[up["command"]], up["args"])
-          elif value < self.prev_value:
             xdotool.execute(xdotool.commands[down["command"]], down["args"])
+          elif value < self.prev_value:
+            xdotool.execute(xdotool.commands[up["command"]], up["args"])
           else:
             if value == 6:
               xdotool.execute(xdotool.commands[down["command"]], down["args"])
