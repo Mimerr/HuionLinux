@@ -28,7 +28,7 @@ class Buttons:
     if button["command"] is None or button["command"] == "none":
       return
 
-    if (is_up_cmd and is_up):
+    if (is_up_cmd and is_up) or (not is_up_cmd and not is_up):
       xdotool.execute(xdotool.commands[button["command"]], button["args"])
     elif button["command"] == "keydown" and is_up:
       xdotool.execute(xdotool.commands["keyup"], button["args"])
